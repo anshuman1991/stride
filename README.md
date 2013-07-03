@@ -1,2 +1,3 @@
 stride
 ======
+A navigational application.
