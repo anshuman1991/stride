@@ -1,6 +1,7 @@
 package com.example.stride;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View arg0) {        
                 // create class object
-                gps = new GPSManager(MainActivity.this);
+                /*gps = new GPSManager(MainActivity.this);
  
                 // check if GPS enabled     
                 if(gps.canGetLocation()){
@@ -41,7 +42,9 @@ public class MainActivity extends Activity {
                     // GPS or Network is not enabled
                     // Ask user to enable GPS/network in settings
                     gps.showSettingsAlert();
-                }
+                }*/
+            	Intent i=new Intent(getApplicationContext(),CompassActivity.class);
+            	startActivity(i);
                  
             }
         });

@@ -7,8 +7,10 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -23,7 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.stride.CompassActivity"
+            android:label="@string/title_activity_compass" >
+        </activity>
     </application>
 
-    
 </manifest>
